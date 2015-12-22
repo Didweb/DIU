@@ -4,7 +4,7 @@ CREATE DATABASE IF NOT EXISTS coworking;
 #Creacion de la tabla de usuarios
 CREATE TABLE IF NOT EXISTS usuarios (
       DNI VARCHAR(6) PRIMARY KEY,
-      password VARCHAR(8) NOT NULL, 
+      password VARCHAR(8) NOT NULL,
       nombre VARCHAR(20) NOT NULL,
       apellido VARCHAR(20) NOT NULL,
       telefono VARCHAR(9) NOT NULL,
@@ -14,5 +14,10 @@ CREATE TABLE IF NOT EXISTS usuarios (
 );
 #Creacion de la tabla eventos
 CREATE TABLE IF NOT EXISTS eventos(
-
-)
+      ID INT PRIMARY KEY AUTO_INCREMENT,
+      nombre VARCHAR(20) NOT NULL,
+      fecha DATE NOT NULL,
+      sala VARCHAR(15) NOT NULL,
+      descripcion varchar(80),
+      FOREIGN KEY (sala) REFERENCES salas(nombre) 
+);
