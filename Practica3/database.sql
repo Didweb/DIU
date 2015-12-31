@@ -19,5 +19,12 @@ CREATE TABLE IF NOT EXISTS eventos(
       fecha DATE NOT NULL,
       sala VARCHAR(15) NOT NULL,
       descripcion varchar(80),
-      FOREIGN KEY (sala) REFERENCES salas(nombre) 
+      FOREIGN KEY (sala) REFERENCES salas(nombre)
+);
+#Creacion de la tabla salas
+CREATE TABLE IF NOT EXISTS salas(
+      nombre VARCHAR(20) PRIMARY KEY,
+      libre BOOLEAN
+
+
 );
