@@ -1,17 +1,15 @@
 #login-dp{
     min-width: 300px;
-    padding: 14px 14px;
-    overflow:hidden;
+    padding: 1px 1px;
+    background-color:grey;
+}
+#login-dp-up{
+    min-width: 400px;
+    padding: 1px 1px;
     background-color:grey;
 }
 #titulo-signin{
       color:black;
-}
-#login-dp .bottom{
-    background-color:rgba(255,255,255,.8);
-    border-top:1px solid #ddd;
-    clear:both;
-    padding:14px;
 }
 #login-dp .form-group {
     margin-bottom: 10px;
@@ -32,13 +30,3 @@
     color: #fff;
     background-color:#59b5fa;
 }
-/*@media(max-width:768px){
-    #login-dp{
-        background-color: inherit;
-        color: #fff;
-    }
-    #login-dp .bottom{
-        background-color: inherit;
-        border-top:0 none;
-    }
-}*/
