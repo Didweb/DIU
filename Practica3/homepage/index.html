@@ -99,7 +99,14 @@
                                           if (form.inputDNI.value == "javi") {
                                                 if (form.inputPassword.value=="hola") {
                                                       window.open('../App/user.html')
-                                                } else {
+                                                }
+                                          }
+
+                                          else if (form.inputDNI.value == "admin"){
+                                                if(form.inputPassword.value == "hola"){
+                                                      window.open('../App/admin.html')
+
+                                          } else {
                                                       alert("Contraseña incorrecta")}
                                           } else {  alert("Usuario incorrecto")}
                                     }
