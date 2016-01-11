@@ -74,18 +74,18 @@
                         					 <div class="row">
                         							<div class="col-md-12">
                                                                         <p id="titulo-signin"> Introduce tu DNI y Password:</p>
-                        								 <form class="form" role="form" method="post" action="../App/user.html" accept-charset="UTF-8" id="login-nav">
+                        								 <form class="form" role="form" method="post"  accept-charset="UTF-8" id="login-nav">
                         										<div class="form-group">
-                        											 <label class="sr-only" for="exampleInputEmail2">DNI</label>
-                        											 <input type="text" class="form-control" id="inputDNI" placeholder="DNI" required>
+                        											 <label class="sr-only">DNI</label>
+                        											 <input type="text" class="form-control" id="inputDNI" name="inputDNI" placeholder="DNI" required>
                         										</div>
                         										<div class="form-group">
                         											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-                        											 <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                        											 <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password" required>
 
                         										</div>
                         										<div class="form-group">
-                        											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                        											 <button type="submit" class="btn btn-primary btn-block" onclick="check(this.form)">Sign in </button>
                         										</div>
                         								 </form>
                         							</div>
@@ -93,6 +93,19 @@
                         				</li>
                                           </ul>
                               </li>
+                              <!-- SCRIP PARA SIGN IN -->
+                              <script type="text/javascript" >
+                                    function check(form) {
+                                          if (form.inputDNI.value == "javi") {
+                                                if (form.inputPassword.value=="hola") {
+                                                      window.open('../App/user.html')
+                                                } else {
+                                                      alert("Contraseña incorrecta")}
+                                          } else {  alert("Usuario incorrecto")}
+                                    }
+                                    </script>
+
+                              </script>
                               <!-- BOTON SIGN UP -->
                               <li class="dropdown">
                                    <a class="dropdown-toggle" data-toggle="dropdown"><b>Sign Up</b> <span class="caret"></span></a>
