@@ -25,3 +25,5 @@ Diseño de Interface de Usuarios. ETSIIT Universidad de Granada
 	|--database.sql
 
 ###La web de la practica 3 puedes verla [aqui](http://jarandaizquierdo.github.io/DIU/homepage/index.html)
+	user: javi
+    password: hola
